@@ -1,21 +1,24 @@
-# Ex.No:1(D) USER DEFINED METHOD.
+# Ex.No:1(D) ARRAYS
+
+## QUESTION:
+Write a Java program to sort an array in ascending order.
+| Input | Result |
+|-------|--------|
+| 5<br>5<br>3<br>8<br>6<br>2 | 2 3 5 6 8 |
+
 
 ## AIM:
-To create a Java program print area of rectangle by defining instance method and local variable value as 10,20 .[Class Name is ‘Area’ function name is ‘calculateArea()’ and return type of function is ’void’
+To write a Java program that reads an array of integers and sorts the elements in ascending order using built-in array methods.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Define a class named 'Area'
-3.	Declare a public method named 'calculateArea' with no parameters
-4.	Inside the 'calculateArea' method:
-a)	Declare a Double variable 'length' and assign it the value 10.0
-b)	Declare a Double variable 'width' and assign it the value 20.0
-c)	Calculate the area by multiplying 'length' and 'width' and store the result in a Double variable 'area'
-d)	Print the calculated area using the System.out.println statement
-5.	Define the 'main' method as static
-6.	Inside the 'main' method:
-a)	Create an instance of the 'Area' class called 'rectangle'
-b)	Call the 'calculateArea' method on the 'rectangle' object
+2.	Import the necessary package 'java.util'
+3.	Read the size of the array from the user.
+4.	Declare an integer array with the given size.
+5.	Read each array element using a loop.
+6.	Use Arrays.sort() to sort the array in ascending order.
+7.	Print the sorted array elements.
+8.	End the program.
 
 
 
@@ -23,14 +26,34 @@ b)	Call the 'calculateArea' method on the 'rectangle' object
 ## PROGRAM:
  ```
 /*
-Program to implement a User Defined Method using Java
-Developed by: 
-RegisterNumber:  
+Program to implement variables and Operators using Java
+Developed by: NAVINKUMAR V
+RegisterNumber: 212223230141
 */
 ```
 
-## Sourcecode.java:
-
+## SOURCE CODE:
+```
+import java.util.*;
+class prog{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for (int i=0;i<n;i++)
+        {
+            int x=sc.nextInt();
+            a[i]=x;
+        }
+        Arrays.sort(a);
+        for (int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+ " ");
+        }
+    }
+}
+```
 
 
 
@@ -39,8 +62,9 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="500" height="694" alt="image" src="https://github.com/user-attachments/assets/ff86bb32-fc40-4c22-9e7f-5a6f77bb0477" />
+
 
 
 ## RESULT:
-Thus, the Java program to print area of rectangle by defining instance method and local variable value as 10,20 was created successfully.
-
+Thus, the Java program to sort an array in ascending order was executed successfully.
