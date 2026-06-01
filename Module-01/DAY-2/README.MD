@@ -1,20 +1,28 @@
-# Ex.No:1(B) VARIABLES AND OPERATOR
+# Ex.No:1(B) CONDITIONAL STATEMENT
+
+## QUESTION:
+A dragon wakes based on temperature:
+
+If temperature < 0, it hibernates. If 0 ≤ temp ≤ 20, it snoozes. If 21 ≤ temp ≤ 35, it wakes. If temp > 35, it gets angry.
+
+Write a java program to get the user input for temperature and display appropriate output.
+
+Example Input: -5
+
+Result : Hibernating
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
+To write a java program to get the user input for temperature and display appropriate output.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Define a class named 'Demo'
-4.	Implement the main method
-5.	Create a new instance of the 'Scanner' class named 'sc' to read user input
-6.	Read an integer 'a' from the user using the 'nextInt' method of 'sc'
-7.	Read another integer 'b' from the user using the 'nextInt' method of 'sc'
-8.	Check if 'a' is less than 50 or if 'a' is less than 'b'
-a)	If the condition is true, print "true" using the 'print' method of 'System.out'
-b)	If the condition is false, print "false" using the 'print' method of 'System.out'
-9.	End
+1.Start the program.
+2.Import the necessary package 'java.util'
+3.Create a Scanner object to read input from the user.
+4.Read an integer value and store it in the variable temp.
+5.Check if temp < 0 : If true, print "Hibernating".
+6.Else if temp is between 0 and 20 (inclusive) : Print "Snoozing".
+7.Else if temp is between 21 and 35 (inclusive): Print "Awake".
+8.Else (i.e., temp > 35): Print "Angry".
 
 
 
@@ -23,23 +31,46 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
 ## PROGRAM:
  ```
 /*
-Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
+Program to implement variables and Operators using Java
+Developed by: NAVINKUMAR V
+RegisterNumber:  212223230141
 */
 ```
 
-## Sourcecode.java:
+## SOURCE CODE:
+```
+import java.util.*;
 
-
-
-
-
-
+class prog{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        if (t<0)
+        {
+            System.out.println("Hibernating");
+        }
+        else if(t>=0 && t<=20)
+        {
+            System.out.println("Snoozing");
+        }
+        else if (t>=21 && t<=35)
+        {
+            System.out.println("Awake");
+        }
+        else
+        {
+            System.out.println("Angry");
+        }
+    }
+}
+```
 
 ## OUTPUT:
+
+<img width="382" height="294" alt="image" src="https://github.com/user-attachments/assets/114a7c5e-3f3b-4860-8ab5-8a70a4b8b656" />
 
 
 
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus, a java program to get the user input for temperature and display appropriate output is executed successfully.
